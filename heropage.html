@@ -27,9 +27,18 @@
         width: 420px;
         vertical-align: top;
     }
-    div {
-        margin: auto;
+    #heroes {
+        display: table-cell;
         width: 960px;
+        padding-right: 22px;
+    }
+    aside {
+        display: table-cell;
+        width: 300px;
+    }
+    #pagebody {
+        margin: auto;
+        width: 1500;
     }
     body {
         background-color: #202020;
@@ -38,93 +47,98 @@
   <script src="jquery.js"></script>
 </head>
 <body>
-  <div>
-    <ul>
-      <li><img src="earthshaker.png" alt="Earthshaker" onclick="highlightHero('earthshaker')"></li>
-      <li><img src="sven.png" alt="Sven" onclick="highlightHero('sven')"></li>
-      <li><img src="tiny.png" alt="Tiny" onclick="highlightHero('tiny')"></li>
-      <li><img src="kunkka.png" alt="Kunkka" onclick="highlightHero('kunkka')"></li>
-      <li><img src="beastmaster.png" alt="Beastmaster" onclick="highlightHero('beastmaster')"></li>
-      <li><img src="dragon_knight.png" alt="Dragon Knight" onclick="highlightHero('dragon_knight')"></li>
-      <li><img src="clockwerk.png" alt="Clockwerk" onclick="highlightHero('clockwerk')"></li>
-      <li><img src="omniknight.png" alt="Omniknight" onclick="highlightHero('omniknight')"></li>
-      <li><img src="huskar.png" alt="Huskar" onclick="highlightHero('huskar')"></li>
-      <li><img src="alchemist.png" alt="Alchemist" onclick="highlightHero('alchemist')"></li>
-      <li><img src="brewmaster.png" alt="Brewmaster" onclick="highlightHero('brewmaster')"></li>
-    </ul>
-    <ul>
-      <li><img src="axe.png" alt="Axe" onclick="highlightHero('axe')"></li>
-      <li><img src="pudge.png" alt="Pudge" onclick="highlightHero('pudge')"></li>
-      <li><img src="sand_king.png" alt="Sand King" onclick="highlightHero('sand_king')"></li>
-      <li><img src="slardar.png" alt="Slardar" onclick="highlightHero('slardar')"></li>
-      <li><img src="tidehunter.png" alt="Tidehunter" onclick="highlightHero('tidehunter')"></li>
-      <li><img src="skeleton_king.png" alt="Skeleton King" onclick="highlightHero('skeleton_king')"></li>
-      <li><img src="lifestealer.png" alt="Lifestealer" onclick="highlightHero('lifestealer')"></li>
-      <li><img src="night_stalker.png" alt="Night Stalker" onclick="highlightHero('night_stalker')"></li>
-      <li><img src="doom_bringer.png" alt="Doom Bringer" onclick="highlightHero('doom_bringer')"></li>
-      <li><img src="spirit_breaker.png" alt="Spirit Breaker" onclick="highlightHero('spirit_breaker')"></li>
-      <li><img src="lycanthrope.png" alt="Lycanthrope" onclick="highlightHero('lycanthrope')"></li>
-    </ul>
-    <ul>
-      <li><img src="anti_mage.png" alt="Anti Mage" onclick="highlightHero('anti_mage')"></li>
-      <li><img src="drow_ranger.png" alt="Drow Ranger" onclick="highlightHero('drow_ranger')"></li>
-      <li><img src="juggernaut.png" alt="Juggernaut" onclick="highlightHero('juggernaut')"></li>
-      <li><img src="mirana.png" alt="Mirana" onclick="highlightHero('mirana')"></li>
-      <li><img src="morphling.png" alt="Morphling" onclick="highlightHero('morphling')"></li>
-      <li><img src="vengeful_spirit.png" alt="Vengeful Spirit" onclick="highlightHero('vengeful_spirit')"></li>
-      <li><img src="riki.png" alt="Riki" onclick="highlightHero('riki')"></li>
-      <li><img src="sniper.png" alt="Sniper" onclick="highlightHero('sniper')"></li>
-      <li><img src="bounty_hunter.png" alt="Bounty Hunter" onclick="highlightHero('bounty_hunter')"></li>
-      <li><img src="ursa.png" alt="Ursa" onclick="highlightHero('ursa')"></li>
-      <li><img src="lone_druid.png" alt="Lone Druid" onclick="highlightHero('lone_druid')"></li>
-    </ul>
-    <ul>
-      <li><img src="bloodseeker.png" alt="Bloodseeker" onclick="highlightHero('bloodseeker')"></li>
-      <li><img src="shadow_fiend.png" alt="Shadow Fiend" onclick="highlightHero('shadow_fiend')"></li>
-      <li><img src="razor.png" alt="Razor" onclick="highlightHero('razor')"></li>
-      <li><img src="venomancer.png" alt="Venomancer" onclick="highlightHero('venomancer')"></li>
-      <li><img src="faceless_void.png" alt="Faceless Void" onclick="highlightHero('faceless_void')"></li>
-      <li><img src="viper.png" alt="Viper" onclick="highlightHero('viper')"></li>
-      <li><img src="clinkz.png" alt="Clinkz" onclick="highlightHero('clinkz')"></li>
-      <li><img src="broodmother.png" alt="Broodmother" onclick="highlightHero('broodmother')"></li>
-      <li><img src="weaver.png" alt="Weaver" onclick="highlightHero('weaver')"></li>
-      <li><img src="spectre.png" alt="Spectre" onclick="highlightHero('spectre')"></li>
-    </ul>
-    <ul>
-      <li><img src="crystal_maiden.png" alt="Crystal Maiden" onclick="highlightHero('crystal_maiden')"></li>
-      <li><img src="puck.png" alt="Puck" onclick="highlightHero('puck')"></li>
-      <li><img src="storm_spirit.png" alt="Storm Spirit" onclick="highlightHero('storm_spirit')"></li>
-      <li><img src="windrunner.png" alt="Windrunner" onclick="highlightHero('windrunner')"></li>
-      <li><img src="zeus.png" alt="Zeus" onclick="highlightHero('zeus')"></li>
-      <li><img src="lina.png" alt="Lina" onclick="highlightHero('lina')"></li>
-      <li><img src="shadow_shaman.png" alt="Shadow Shaman" onclick="highlightHero('shadow_shaman')"></li>
-      <li><img src="tinker.png" alt="Tinker" onclick="highlightHero('tinker')"></li>
-      <li><img src="natures_prophet.png" alt="Natures Prophet" onclick="highlightHero('natures_prophet')"></li>
-      <li><img src="enchantress.png" alt="Enchantress" onclick="highlightHero('enchantress')"></li>
-      <li><img src="jakiro.png" alt="Jakiro" onclick="highlightHero('jakiro')"></li>
-      <li><img src="chen.png" alt="Chen" onclick="highlightHero('chen')"></li>
-      <li><img src="silencer.png" alt="Silencer" onclick="highlightHero('silencer')"></li>
-    </ul>
-    <ul>
-      <li><img src="bane_elemental.png" alt="Bane Elemental" onclick="highlightHero('bane_elemental')"></li>
-      <li><img src="lich.png" alt="Lich" onclick="highlightHero('lich')"></li>
-      <li><img src="lion.png" alt="Lion" onclick="highlightHero('lion')"></li>
-      <li><img src="witch_doctor.png" alt="Witch Doctor" onclick="highlightHero('witch_doctor')"></li>
-      <li><img src="enigma.png" alt="Enigma" onclick="highlightHero('enigma')"></li>
-      <li><img src="necrolyte.png" alt="Necrolyte" onclick="highlightHero('necrolyte')"></li>
-      <li><img src="warlock.png" alt="Warlock" onclick="highlightHero('warlock')"></li>
-      <li><img src="queen_of_pain.png" alt="Queen of Pain" onclick="highlightHero('queen_of_pain')"></li>
-      <li><img src="death_prophet.png" alt="Death Prophet" onclick="highlightHero('death_prophet')"></li>
-      <li><img src="pugna.png" alt="Pugna" onclick="highlightHero('pugna')"></li>
-      <li><img src="dazzle.png" alt="Dazzle" onclick="highlightHero('dazzle')"></li>
-      <li><img src="leshrac.png" alt="Leshrac" onclick="highlightHero('leshrac')"></li>
-      <li><img src="dark_seer.png" alt="Dark Seer" onclick="highlightHero('dark_seer')"></li>
-      <li><img src="batrider.png" alt="Batrider" onclick="highlightHero('batrider')"></li>
-      <li><img src="ancient_apparition.png" alt="Ancient Apparition" onclick="highlightHero('ancient_apparition')"></li>
-      <li><img src="invoker.png" alt="Invoker" onclick="highlightHero('invoker')"></li>
-      <li><img src="outworld_destroyer.png" alt="Outworld Destroyer" onclick="highlightHero('outworld_destroyer')"></li>
-      <li><img src="shadow_demon.png" alt="Shadow Demon" onclick="highlightHero('shadow_demon')"></li>
-    </ul>
+  <div id="pagebody">
+      <div id="heroes">
+        <ul>
+          <li><img src="earthshaker.png" alt="Earthshaker"</li>
+          <li><img src="sven.png" alt="Sven"</li>
+          <li><img src="tiny.png" alt="Tiny"</li>
+          <li><img src="kunkka.png" alt="Kunkka"</li>
+          <li><img src="beastmaster.png" alt="Beastmaster"</li>
+          <li><img src="dragon_knight.png" alt="Dragon Knight"</li>
+          <li><img src="clockwerk.png" alt="Clockwerk"</li>
+          <li><img src="omniknight.png" alt="Omniknight"</li>
+          <li><img src="huskar.png" alt="Huskar"</li>
+          <li><img src="alchemist.png" alt="Alchemist"</li>
+          <li><img src="brewmaster.png" alt="Brewmaster"</li>
+        </ul>
+        <ul>
+          <li><img src="axe.png" alt="Axe"</li>
+          <li><img src="pudge.png" alt="Pudge"</li>
+          <li><img src="sand_king.png" alt="Sand King"</li>
+          <li><img src="slardar.png" alt="Slardar"</li>
+          <li><img src="tidehunter.png" alt="Tidehunter"</li>
+          <li><img src="skeleton_king.png" alt="Skeleton King"</li>
+          <li><img src="lifestealer.png" alt="Lifestealer"</li>
+          <li><img src="night_stalker.png" alt="Night Stalker"</li>
+          <li><img src="doom_bringer.png" alt="Doom Bringer"</li>
+          <li><img src="spirit_breaker.png" alt="Spirit Breaker"</li>
+          <li><img src="lycanthrope.png" alt="Lycanthrope"</li>
+        </ul>
+        <ul>
+          <li><img src="anti_mage.png" alt="Anti Mage"</li>
+          <li><img src="drow_ranger.png" alt="Drow Ranger"</li>
+          <li><img src="juggernaut.png" alt="Juggernaut"</li>
+          <li><img src="mirana.png" alt="Mirana"</li>
+          <li><img src="morphling.png" alt="Morphling"</li>
+          <li><img src="vengeful_spirit.png" alt="Vengeful Spirit"</li>
+          <li><img src="riki.png" alt="Riki"</li>
+          <li><img src="sniper.png" alt="Sniper"</li>
+          <li><img src="bounty_hunter.png" alt="Bounty Hunter"</li>
+          <li><img src="ursa.png" alt="Ursa"</li>
+          <li><img src="lone_druid.png" alt="Lone Druid"</li>
+        </ul>
+        <ul>
+          <li><img src="bloodseeker.png" alt="Bloodseeker"</li>
+          <li><img src="shadow_fiend.png" alt="Shadow Fiend"</li>
+          <li><img src="razor.png" alt="Razor"</li>
+          <li><img src="venomancer.png" alt="Venomancer"</li>
+          <li><img src="faceless_void.png" alt="Faceless Void"</li>
+          <li><img src="viper.png" alt="Viper"</li>
+          <li><img src="clinkz.png" alt="Clinkz"</li>
+          <li><img src="broodmother.png" alt="Broodmother"</li>
+          <li><img src="weaver.png" alt="Weaver"</li>
+          <li><img src="spectre.png" alt="Spectre"</li>
+        </ul>
+        <ul>
+          <li><img src="crystal_maiden.png" alt="Crystal Maiden"</li>
+          <li><img src="puck.png" alt="Puck"</li>
+          <li><img src="storm_spirit.png" alt="Storm Spirit"</li>
+          <li><img src="windrunner.png" alt="Windrunner"</li>
+          <li><img src="zeus.png" alt="Zeus"</li>
+          <li><img src="lina.png" alt="Lina"</li>
+          <li><img src="shadow_shaman.png" alt="Shadow Shaman"</li>
+          <li><img src="tinker.png" alt="Tinker"</li>
+          <li><img src="natures_prophet.png" alt="Natures Prophet"</li>
+          <li><img src="enchantress.png" alt="Enchantress"</li>
+          <li><img src="jakiro.png" alt="Jakiro"</li>
+          <li><img src="chen.png" alt="Chen"</li>
+          <li><img src="silencer.png" alt="Silencer"</li>
+        </ul>
+        <ul>
+          <li><img src="bane_elemental.png" alt="Bane Elemental"</li>
+          <li><img src="lich.png" alt="Lich"</li>
+          <li><img src="lion.png" alt="Lion"</li>
+          <li><img src="witch_doctor.png" alt="Witch Doctor"</li>
+          <li><img src="enigma.png" alt="Enigma"</li>
+          <li><img src="necrolyte.png" alt="Necrolyte"</li>
+          <li><img src="warlock.png" alt="Warlock"</li>
+          <li><img src="queen_of_pain.png" alt="Queen of Pain"</li>
+          <li><img src="death_prophet.png" alt="Death Prophet"</li>
+          <li><img src="pugna.png" alt="Pugna"</li>
+          <li><img src="dazzle.png" alt="Dazzle"</li>
+          <li><img src="leshrac.png" alt="Leshrac"</li>
+          <li><img src="dark_seer.png" alt="Dark Seer"</li>
+          <li><img src="batrider.png" alt="Batrider"</li>
+          <li><img src="ancient_apparition.png" alt="Ancient Apparition"</li>
+          <li><img src="invoker.png" alt="Invoker"</li>
+          <li><img src="outworld_destroyer.png" alt="Outworld Destroyer"</li>
+          <li><img src="shadow_demon.png" alt="Shadow Demon"</li>
+        </ul>
+      </div>
+      <aside>
+        # textarea goes here
+      </aside>
   </div>
   <script>
       $("li").click(function () {
