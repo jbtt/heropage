@@ -35,20 +35,22 @@
     #heroes {
         display: table-cell;
         width: 960px;
-        padding-right: 22px;
+        padding-right: 10px;
     }
     #builds {
         display: table-cell;
         width: 300px;
+        vertical-align: top;
+        padding: 15px;
     }
     body {
         background-color: #202020;
     }
     textarea {
-        border: 3px solid #101010;
+        border: 1px solid #101010;
         padding: 5px;
         font-family: Tahoma, sans-serif;
-
+        border-radius: 5px;
     }
   </style>
   <script src="jquery.js"></script>
@@ -57,90 +59,90 @@
   <div id="pagebody">
       <div id="heroes">
         <ul>
-            <li><img src="earthshaker.png" alt="Earthshaker"></li>
-            <li><img src="sven.png" alt="Sven"></li>
-            <li><img src="tiny.png" alt="Tiny"></li>
-            <li><img src="kunkka.png" alt="Kunkka"></li>
-            <li><img src="beastmaster.png" alt="Beastmaster"></li>
-            <li><img src="dragon_knight.png" alt="Dragon Knight"></li>
-            <li><img src="clockwerk.png" alt="Clockwerk"></li>
-            <li><img src="omniknight.png" alt="Omniknight"></li>
-            <li><img src="huskar.png" alt="Huskar"></li>
-            <li><img src="alchemist.png" alt="Alchemist"></li>
-            <li><img src="brewmaster.png" alt="Brewmaster"></li>
+            <li><img src="images/earthshaker.png" alt="Earthshaker"></li>
+            <li><img src="images/sven.png" alt="Sven"></li>
+            <li><img src="images/tiny.png" alt="Tiny"></li>
+            <li><img src="images/kunkka.png" alt="Kunkka"></li>
+            <li><img src="images/beastmaster.png" alt="Beastmaster"></li>
+            <li><img src="images/dragon_knight.png" alt="Dragon Knight"></li>
+            <li><img src="images/clockwerk.png" alt="Clockwerk"></li>
+            <li><img src="images/omniknight.png" alt="Omniknight"></li>
+            <li><img src="images/huskar.png" alt="Huskar"></li>
+            <li><img src="images/alchemist.png" alt="Alchemist"></li>
+            <li><img src="images/brewmaster.png" alt="Brewmaster"></li>
         </ul>
         <ul>
-            <li><img src="axe.png" alt="Axe"></li>
-            <li><img src="pudge.png" alt="Pudge"></li>
-            <li><img src="sand_king.png" alt="Sand King"></li>
-            <li><img src="slardar.png" alt="Slardar"></li>
-            <li><img src="tidehunter.png" alt="Tidehunter"></li>
-            <li><img src="skeleton_king.png" alt="Skeleton King"></li>
-            <li><img src="lifestealer.png" alt="Lifestealer"></li>
-            <li><img src="night_stalker.png" alt="Night Stalker"></li>
-            <li><img src="doom_bringer.png" alt="Doom Bringer"></li>
-            <li><img src="spirit_breaker.png" alt="Spirit Breaker"></li>
-            <li><img src="lycanthrope.png" alt="Lycanthrope"></li>
+            <li><img src="images/axe.png" alt="Axe"></li>
+            <li><img src="images/pudge.png" alt="Pudge"></li>
+            <li><img src="images/sand_king.png" alt="Sand King"></li>
+            <li><img src="images/slardar.png" alt="Slardar"></li>
+            <li><img src="images/tidehunter.png" alt="Tidehunter"></li>
+            <li><img src="images/skeleton_king.png" alt="Skeleton King"></li>
+            <li><img src="images/lifestealer.png" alt="Lifestealer"></li>
+            <li><img src="images/night_stalker.png" alt="Night Stalker"></li>
+            <li><img src="images/doom_bringer.png" alt="Doom Bringer"></li>
+            <li><img src="images/spirit_breaker.png" alt="Spirit Breaker"></li>
+            <li><img src="images/lycanthrope.png" alt="Lycanthrope"></li>
         </ul>
         <ul>
-            <li><img src="anti_mage.png" alt="Anti Mage"></li>
-            <li><img src="drow_ranger.png" alt="Drow Ranger"></li>
-            <li><img src="juggernaut.png" alt="Juggernaut"></li>
-            <li><img src="mirana.png" alt="Mirana"></li>
-            <li><img src="morphling.png" alt="Morphling"></li>
-            <li><img src="vengeful_spirit.png" alt="Vengeful Spirit"></li>
-            <li><img src="riki.png" alt="Riki"></li>
-            <li><img src="sniper.png" alt="Sniper"></li>
-            <li><img src="bounty_hunter.png" alt="Bounty Hunter"></li>
-            <li><img src="ursa.png" alt="Ursa"></li>
-            <li><img src="lone_druid.png" alt="Lone Druid"></li>
+            <li><img src="images/anti_mage.png" alt="Anti Mage"></li>
+            <li><img src="images/drow_ranger.png" alt="Drow Ranger"></li>
+            <li><img src="images/juggernaut.png" alt="Juggernaut"></li>
+            <li><img src="images/mirana.png" alt="Mirana"></li>
+            <li><img src="images/morphling.png" alt="Morphling"></li>
+            <li><img src="images/vengeful_spirit.png" alt="Vengeful Spirit"></li>
+            <li><img src="images/riki.png" alt="Riki"></li>
+            <li><img src="images/sniper.png" alt="Sniper"></li>
+            <li><img src="images/bounty_hunter.png" alt="Bounty Hunter"></li>
+            <li><img src="images/ursa.png" alt="Ursa"></li>
+            <li><img src="images/lone_druid.png" alt="Lone Druid"></li>
         </ul>
         <ul>
-            <li><img src="bloodseeker.png" alt="Bloodseeker"></li>
-            <li><img src="shadow_fiend.png" alt="Shadow Fiend"></li>
-            <li><img src="razor.png" alt="Razor"></li>
-            <li><img src="venomancer.png" alt="Venomancer"></li>
-            <li><img src="faceless_void.png" alt="Faceless Void"></li>
-            <li><img src="viper.png" alt="Viper"></li>
-            <li><img src="clinkz.png" alt="Clinkz"></li>
-            <li><img src="broodmother.png" alt="Broodmother"></li>
-            <li><img src="weaver.png" alt="Weaver"></li>
-            <li><img src="spectre.png" alt="Spectre"></li>
+            <li><img src="images/bloodseeker.png" alt="Bloodseeker"></li>
+            <li><img src="images/shadow_fiend.png" alt="Shadow Fiend"></li>
+            <li><img src="images/razor.png" alt="Razor"></li>
+            <li><img src="images/venomancer.png" alt="Venomancer"></li>
+            <li><img src="images/faceless_void.png" alt="Faceless Void"></li>
+            <li><img src="images/viper.png" alt="Viper"></li>
+            <li><img src="images/clinkz.png" alt="Clinkz"></li>
+            <li><img src="images/broodmother.png" alt="Broodmother"></li>
+            <li><img src="images/weaver.png" alt="Weaver"></li>
+            <li><img src="images/spectre.png" alt="Spectre"></li>
         </ul>
         <ul>
-            <li><img src="crystal_maiden.png" alt="Crystal Maiden"></li>
-            <li><img src="puck.png" alt="Puck"></li>
-            <li><img src="storm_spirit.png" alt="Storm Spirit"></li>
-            <li><img src="windrunner.png" alt="Windrunner"></li>
-            <li><img src="zeus.png" alt="Zeus"></li>
-            <li><img src="lina.png" alt="Lina"></li>
-            <li><img src="shadow_shaman.png" alt="Shadow Shaman"></li>
-            <li><img src="tinker.png" alt="Tinker"></li>
-            <li><img src="natures_prophet.png" alt="Natures Prophet"></li>
-            <li><img src="enchantress.png" alt="Enchantress"></li>
-            <li><img src="jakiro.png" alt="Jakiro"></li>
-            <li><img src="chen.png" alt="Chen"></li>
-            <li><img src="silencer.png" alt="Silencer"></li>
+            <li><img src="images/crystal_maiden.png" alt="Crystal Maiden"></li>
+            <li><img src="images/puck.png" alt="Puck"></li>
+            <li><img src="images/storm_spirit.png" alt="Storm Spirit"></li>
+            <li><img src="images/windrunner.png" alt="Windrunner"></li>
+            <li><img src="images/zeus.png" alt="Zeus"></li>
+            <li><img src="images/lina.png" alt="Lina"></li>
+            <li><img src="images/shadow_shaman.png" alt="Shadow Shaman"></li>
+            <li><img src="images/tinker.png" alt="Tinker"></li>
+            <li><img src="images/natures_prophet.png" alt="Natures Prophet"></li>
+            <li><img src="images/enchantress.png" alt="Enchantress"></li>
+            <li><img src="images/jakiro.png" alt="Jakiro"></li>
+            <li><img src="images/chen.png" alt="Chen"></li>
+            <li><img src="images/silencer.png" alt="Silencer"></li>
         </ul>
         <ul>
-            <li><img src="bane_elemental.png" alt="Bane Elemental"></li>
-            <li><img src="lich.png" alt="Lich"></li>
-            <li><img src="lion.png" alt="Lion"></li>
-            <li><img src="witch_doctor.png" alt="Witch Doctor"></li>
-            <li><img src="enigma.png" alt="Enigma"></li>
-            <li><img src="necrolyte.png" alt="Necrolyte"></li>
-            <li><img src="warlock.png" alt="Warlock"></li>
-            <li><img src="queen_of_pain.png" alt="Queen of Pain"></li>
-            <li><img src="death_prophet.png" alt="Death Prophet"></li>
-            <li><img src="pugna.png" alt="Pugna"></li>
-            <li><img src="dazzle.png" alt="Dazzle"></li>
-            <li><img src="leshrac.png" alt="Leshrac"></li>
-            <li><img src="dark_seer.png" alt="Dark Seer"></li>
-            <li><img src="batrider.png" alt="Batrider"></li>
-            <li><img src="ancient_apparition.png" alt="Ancient Apparition"></li>
-            <li><img src="invoker.png" alt="Invoker"></li>
-            <li><img src="outworld_destroyer.png" alt="Outworld Destroyer"></li>
-            <li><img src="shadow_demon.png" alt="Shadow Demon"></li>
+            <li><img src="images/bane_elemental.png" alt="Bane Elemental"></li>
+            <li><img src="images/lich.png" alt="Lich"></li>
+            <li><img src="images/lion.png" alt="Lion"></li>
+            <li><img src="images/witch_doctor.png" alt="Witch Doctor"></li>
+            <li><img src="images/enigma.png" alt="Enigma"></li>
+            <li><img src="images/necrolyte.png" alt="Necrolyte"></li>
+            <li><img src="images/warlock.png" alt="Warlock"></li>
+            <li><img src="images/queen_of_pain.png" alt="Queen of Pain"></li>
+            <li><img src="images/death_prophet.png" alt="Death Prophet"></li>
+            <li><img src="images/pugna.png" alt="Pugna"></li>
+            <li><img src="images/dazzle.png" alt="Dazzle"></li>
+            <li><img src="images/leshrac.png" alt="Leshrac"></li>
+            <li><img src="images/dark_seer.png" alt="Dark Seer"></li>
+            <li><img src="images/batrider.png" alt="Batrider"></li>
+            <li><img src="images/ancient_apparition.png" alt="Ancient Apparition"></li>
+            <li><img src="images/invoker.png" alt="Invoker"></li>
+            <li><img src="images/outworld_destroyer.png" alt="Outworld Destroyer"></li>
+            <li><img src="images/shadow_demon.png" alt="Shadow Demon"></li>
         </ul>
       </div>
       <aside id="builds">
